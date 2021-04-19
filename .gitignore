@@ -1,0 +1,27 @@
+# Mac OS
+.DS_Store
+
+# IDE
+.idea
+.project
+.vscode
+
+# npm
+node_modules
+npm-debug.log
+yarn.lock
+yarn-error.log
+package-lock.json
+.yo-rc.json
+*.bak
+
+# folder
+build
+dist
+coverage
+.build*
+lib
+
+# cache
+.cache
+tsconfig.tsbuildinfo

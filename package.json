@@ -1,0 +1,78 @@
+{
+  "name": "minbx",
+  "version": "0.3.0",
+  "description": "mini mobx",
+  "main": "lib/mobx.js",
+  "umd:main": "lib/mobx.umd.js",
+  "module": "lib/mobx.module.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "test": "jest --verbose",
+    "watch": "jest --watch",
+    "build": "node scripts/build.js",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawler61/minbx.git"
+  },
+  "keywords": [
+    "mobx",
+    "observable",
+    "react",
+    "state management"
+  ],
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/lawler61/minbx#readme",
+  "jest": {
+    "collectCoverage": true,
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.test.json"
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/\\./"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@types/node": "^12.11.1",
+    "@types/react": "16.9.23",
+    "babel-jest": "^24.9.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^24.9.0",
+    "minbx": "^0.3.0",
+    "mobx": "^5.15.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "ts-jest": "^24.2.0",
+    "tslib": "^1.9.3",
+    "typescript": "3.9.9"
+  }
+}
